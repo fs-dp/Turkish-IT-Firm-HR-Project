@@ -10,6 +10,6 @@ I then delved into the world of classifiers, specifically logistic regression, a
 
 The project proceeded with the evaluation of these classifiers, their training, and performance assessment using metrics like confusion matrices and F1 scores. The final phase was a hands-on application of these concepts, where I trained, evaluated, and deployed the final model. We integrated it with the existing HR system to provide seamless and real-time insights for the management.
 
-Here, I will be retracing the steps I took in the project using a similar dataset available on Kaggle, as confidentiality agreements prevent the use of the actual data. This dataset encapsulates factors like job involvement, education, job satisfaction, performance, relationship satisfaction, and work-life balance, mirroring the data I used for the project.
+Here, I will be retracing the steps I took in the project using a similar dataset, as confidentiality agreements prevent the use of the actual data. This dataset encapsulates factors like job involvement, education, job satisfaction, performance, relationship satisfaction, and work-life balance, mirroring the data I used for the project.
 
 Different from the original project, I will also be demonstrating how to deploy this model as a simple app on Azure. This will give you a taste of how such a model can be operationalized in a real-world scenario, similar to integrating it into an existing system.
