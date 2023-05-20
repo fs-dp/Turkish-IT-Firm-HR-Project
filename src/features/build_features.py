@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import MinMaxScaler
+
 
 # Load pickled dataframes
 # These dataframes have been saved to disk from a previous analysis or data processing step
@@ -30,13 +30,5 @@ df_num = df_hr.loc[:, ~df_hr.columns.isin(cat_var)]
 
 # Merge the processed categorical and numerical data back into one dataframe
 df_merged = pd.concat([df_cat, df_num], axis=1)
-
-# Initialize MinMaxScaler
-# This scales the data to a specified range, usually between 0 and 1, to normalize the data.
-scaler = MinMaxScaler()
-
-# Apply the scaler to the merged dataframe to normalize the data and assign it to the variable X
-X = scaler.fit_transform(df_merged)
-
-# Assign the target variable for the machine learning model to the variable y
-y = df_hr['Attrition']
+df_merged['Attrition']=df_hr['Attrition']
+df_merged.to_pickle('../models/df_merged.pkl')
